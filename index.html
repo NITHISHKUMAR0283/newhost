@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rive Animation</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@rive-app/canvas@latest"></script> <!-- ✅ Load Rive First -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="riveCanvas" width="500" height="500"></canvas>
 
-    <div class="container">
-        <canvas id="riveCanvas" width="500" height="500"></canvas>
-    </div>
-
-    <!-- ✅ Load Rive Library First -->
-    <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
-    <!-- ✅ Load Your JavaScript After Rive -->
-    <script src="script.js"></script>
-
+    <script src="script.js"></script> <!-- ✅ Load Your Script AFTER Rive is Loaded -->
 </body>
 </html>
